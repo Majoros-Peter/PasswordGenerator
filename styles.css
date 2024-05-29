@@ -1,0 +1,141 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #1e1e1e;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+
+.container {
+    text-align: center;
+    background: #2e2e2e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 350px;
+}
+
+.password-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2e2e2e;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin: 0px 0px 20px 0px;
+    border-radius: 5px;
+    width: 370px;
+
+    input {
+        background: transparent;
+        border: none;
+        color: #fff;
+        width: 100%;
+        font-size: 1.2em;
+        outline: none;
+    }
+
+    button {
+        background: transparent;
+        border: none;
+        color: #0f0;
+        cursor: pointer;
+    }
+
+    img {
+        height: 23px;
+    }
+}
+
+
+.controls {
+    text-align: left;
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 15px 0px 7px;
+    }
+
+    label {
+        display: block;
+        margin: 10px 0;
+    }
+
+    input[type="range"] {
+        width: 100%;
+    }
+}
+
+#length-display {
+    color: #0f0;
+    font-size: 24px;
+}
+
+#generate-btn {
+    background-color: #00c200;
+    border: 2px solid #00c200;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: .4s;
+
+    &:hover {
+        background-color: transparent;
+        color: #28a745;
+    }
+}
+
+.strength {
+    display: flex;
+    justify-content: space-between;
+    background-color: #242424;
+    padding: 10px;
+    margin: 20px 0px;
+    border-radius: 2px;
+}
+
+input[type='range'] {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: linear-gradient(to right, #0f0 0%, #0f0 0%, #1e1e1e 0%);
+    border-radius: 6px;
+
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background: white;
+        cursor: pointer;
+    }
+
+    &::-moz-range-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background: white;
+        cursor: pointer;
+    }
+}
+
+input[type='checkbox'] {
+    accent-color: #0f0;
+
+    &:checked::before {
+        background-color: #0f0;
+        border: none;
+    }
+}
